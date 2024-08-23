@@ -30,6 +30,7 @@ public class ReadUserInput {
                     break;
                 }
             }
+
             if (!isValidOption) {
                 System.out.println("Ogiltigt val, försök igen.\n");
             } else {
@@ -37,5 +38,9 @@ public class ReadUserInput {
             }
         }
         return userMenuOption;
+    }
+
+    public void closeScanner() {
+        sc.close();
     }
 }
