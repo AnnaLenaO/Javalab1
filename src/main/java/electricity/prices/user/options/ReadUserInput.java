@@ -14,7 +14,7 @@ public class ReadUserInput {
     }
 
     public String readUserOption() {
-        String userMenuOption = "";
+        String userMenuOption;
         boolean isValidOption;
 
         while (true) {
