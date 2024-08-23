@@ -13,31 +13,22 @@ public class ReadUserInput {
         this.sc = new Scanner(System.in);
     }
 
-    public String readUserOption() {
+    public UserOptionResult readUserOption() {
         String userMenuOption;
-        boolean isValidOption;
 
         while (true) {
             new PrintMenu();
             System.out.println("\nVälj ett alternativ");
             userMenuOption = sc.nextLine();
 
-            isValidOption = false;
-
             for (MenuLine line : Menu.getMenuLines()) {
                 if (userMenuOption.equals(line.getOption())) {
-                    isValidOption = true;
-                    break;
+                    return new UserOptionResult(userMenuOption, line.getOption());
                 }
             }
 
-            if (!isValidOption) {
-                System.out.println("Ogiltigt val, försök igen.\n");
-            } else {
-                break;
-            }
+            System.out.println("Ogiltigt val, försök igen.\n");
         }
-        return userMenuOption;
     }
 
     public void closeScanner() {
