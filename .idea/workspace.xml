@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/PrintMenu.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Create &amp; print Menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +76,24 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="17020000" />
+      <workItem from="1724381805226" duration="30891000" />
     </task>
+    <task id="LOCAL−00001" summary="Create &amp; print Menu">
+      <option name="closed" value="true" />
+      <created>1724403214208</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1724403214208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create &amp; print Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create &amp; print Menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
