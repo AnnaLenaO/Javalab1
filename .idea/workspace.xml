@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Close Scanner">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/UserOptionResult.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Removed unnecessary break &amp; isValidOption in readUserOption. Save option made by user.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/UserOptionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/UserOptionResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="48471000" />
+      <workItem from="1724381805226" duration="49925000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -115,7 +113,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1724429971948</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Removed unnecessary break &amp; isValidOption in readUserOption. Save option made by user.">
+      <option name="closed" value="true" />
+      <created>1724442094572</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1724442094572</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +132,8 @@
     <MESSAGE value="Separate class for read user input" />
     <MESSAGE value="Fixed redundant variable in readUserOption" />
     <MESSAGE value="Close Scanner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Close Scanner" />
+    <MESSAGE value="Removed unnecessary break &amp; isValidOption in readUserOption. Save option made by user." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary break &amp; isValidOption in readUserOption. Save option made by user." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

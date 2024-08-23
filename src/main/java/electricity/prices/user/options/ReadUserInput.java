@@ -23,7 +23,7 @@ public class ReadUserInput {
 
             for (MenuLine line : Menu.getMenuLines()) {
                 if (userMenuOption.equals(line.getOption())) {
-                    return new UserOptionResult(userMenuOption, line.getOption());
+                    return new UserOptionResult(userMenuOption, line.getTitle());
                 }
             }
 

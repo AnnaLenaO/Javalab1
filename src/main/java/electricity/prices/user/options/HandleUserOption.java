@@ -9,7 +9,7 @@ public class HandleUserOption {
     }
 
     private void handleOption() {
-        System.out.println(userOptionResult.getTitle());
+        System.out.println("\n" + userOptionResult.title()); //to test & to be removed
         //More logic here to start the different Options
     }
 }
