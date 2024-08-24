@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Enhanced user experience menu options">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Interface for dynamically get package name &amp; execute user choice of action">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +53,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="81476000" />
+      <workItem from="1724381805226" duration="94988000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -153,7 +152,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1724494196055</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Interface for dynamically get package name &amp; execute user choice of action">
+      <option name="closed" value="true" />
+      <created>1724510523958</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1724510523958</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +176,8 @@
     <MESSAGE value="Dynamic handle of users menu option, error handling of Main &amp; read users option" />
     <MESSAGE value="Adjust format for className" />
     <MESSAGE value="Enhanced user experience menu options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhanced user experience menu options" />
+    <MESSAGE value="Interface for dynamically get package name &amp; execute user choice of action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface for dynamically get package name &amp; execute user choice of action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

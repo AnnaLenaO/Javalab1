@@ -17,7 +17,7 @@ public class HandleUserOption {
         try {
             Class<? extends ActionInterface> actionClass = ActionClassRegistry.getActionClass(className);
             if (actionClass == null) {
-                throw new Exception("Ingen klass hittas för: " + className);
+                throw new Exception("Ingen klass " + "\"" + className + "\"" + " hittades");
             }
             ActionInterface action = actionClass.getDeclaredConstructor().newInstance();
             action.execute();
