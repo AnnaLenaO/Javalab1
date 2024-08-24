@@ -12,13 +12,13 @@ public class Menu {
 
     private static List<MenuLine> createMenu() {
         List<MenuLine> menuLines = new ArrayList<MenuLine>();
-        menuLines.add(new MenuLine("", "Elpriser"));
-        menuLines.add(new MenuLine("", "========"));
-        menuLines.add(new MenuLine("1", "Inmatning"));
-        menuLines.add(new MenuLine("2", "Min, Max och Medel"));
-        menuLines.add(new MenuLine("3", "Sortera"));
-        menuLines.add(new MenuLine("4", "Bästa Laddningstid (4h)"));
-        menuLines.add(new MenuLine("e", "Avsluta"));
+        menuLines.add(new MenuLine("", "Elpriser", "NoClassName"));
+        menuLines.add(new MenuLine("", "========", "NoClassName"));
+        menuLines.add(new MenuLine("1", "Inmatning", "Input"));
+        menuLines.add(new MenuLine("2", "Min, Max och Medel", "MinMaxAvg"));
+        menuLines.add(new MenuLine("3", "Sortera", "Sort"));
+        menuLines.add(new MenuLine("4", "Bästa Laddningstid (4h)", "BestChargingTime"));
+        menuLines.add(new MenuLine("e", "Avsluta", "Exit"));
         return menuLines;
     }
 

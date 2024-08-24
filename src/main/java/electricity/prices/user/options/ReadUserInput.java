@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class ReadUserInput {
     private final Scanner sc;
 
-    public ReadUserInput() {
-        this.sc = new Scanner(System.in);
+    public ReadUserInput(Scanner sc) {
+        this.sc = sc;
     }
 
     public UserOptionResult readUserOption() {
@@ -23,15 +23,10 @@ public class ReadUserInput {
 
             for (MenuLine line : Menu.getMenuLines()) {
                 if (userMenuOption.equals(line.getOption())) {
-                    return new UserOptionResult(userMenuOption, line.getTitle());
+                    return new UserOptionResult(userMenuOption, line.getTitle(), line.getClassName());
                 }
             }
-
             System.out.println("Ogiltigt val, försök igen.\n");
         }
-    }
-
-    public void closeScanner() {
-        sc.close();
     }
 }

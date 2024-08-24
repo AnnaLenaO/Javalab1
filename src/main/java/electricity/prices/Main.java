@@ -4,15 +4,30 @@ import electricity.prices.user.options.ReadUserInput;
 import electricity.prices.user.options.HandleUserOption;
 import electricity.prices.user.options.UserOptionResult;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        ReadUserInput readUserInput = new ReadUserInput();
+        Scanner sc = new Scanner(System.in);
+        boolean restarting = true;
 
-        try {
-            UserOptionResult userOptionResult = readUserInput.readUserOption();
-            new HandleUserOption(userOptionResult);
-        } finally {
-            readUserInput.closeScanner();
+        while (restarting) {
+            ReadUserInput readUserInput = new ReadUserInput(sc);
+
+            try {
+                UserOptionResult userOptionResult = readUserInput.readUserOption();
+                new HandleUserOption(userOptionResult);
+                restarting = false;
+            } catch (Exception e) {
+                System.out.println("Fel: " + e.getMessage());
+                System.out.println("Försöka igen? (y/n)");
+                String input = sc.nextLine();
+                if (!input.equalsIgnoreCase("y")) {
+                    restarting = false;
+                }
+            }
         }
+        sc.close();
+        System.out.println("Programmet avslutas");
     }
 }
