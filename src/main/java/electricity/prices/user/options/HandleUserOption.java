@@ -14,7 +14,7 @@ public class HandleUserOption {
 
         try {
             //Might use interface here, instead of reflection
-            Class<?> classObj = Class.forName("electricity.prices." + "className");
+            Class<?> classObj = Class.forName("electricity.prices." + className);
             classObj.getMethod("main", String[].class).invoke(null, (Object) new String[]{});
         } catch (Exception e) {
 //            e.printStackTrace();
