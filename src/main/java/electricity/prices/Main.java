@@ -20,9 +20,10 @@ public class Main {
                 restarting = false;
             } catch (Exception e) {
                 System.out.println("Fel: " + e.getMessage());
-                System.out.println("Försöka igen? (y/n)");
+                System.out.println("Försöka igen? (y)");
                 String input = sc.nextLine();
                 if (!input.equalsIgnoreCase("y")) {
+                    System.out.println("Du valde inte \"y\"");
                     restarting = false;
                 }
             }

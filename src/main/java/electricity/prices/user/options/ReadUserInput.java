@@ -22,11 +22,11 @@ public class ReadUserInput {
             userMenuOption = sc.nextLine();
 
             for (MenuLine line : Menu.getMenuLines()) {
-                if (userMenuOption.equals(line.getOption())) {
+                if (line.isSelectable() && userMenuOption.equalsIgnoreCase(line.getOption())) {
                     return new UserOptionResult(userMenuOption, line.getTitle(), line.getClassName());
                 }
             }
-            System.out.println("Ogiltigt val, försök igen.\n");
+            System.out.println("Ogiltigt val, försök igen");
         }
     }
 }
