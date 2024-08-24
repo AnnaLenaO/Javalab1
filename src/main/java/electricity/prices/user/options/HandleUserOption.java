@@ -1,5 +1,8 @@
 package electricity.prices.user.options;
 
+import electricity.prices.actions.ActionClassRegistry;
+import electricity.prices.actions.ActionInterface;
+
 public class HandleUserOption {
     private final UserOptionResult userOptionResult;
 
@@ -12,14 +15,17 @@ public class HandleUserOption {
         String className = userOptionResult.className();
 
         try {
-            //Might use interface here, instead of reflection
-            Class<?> classObj = Class.forName("electricity.prices.actions." + className);
-            classObj.getMethod("main", String[].class).invoke(null, (Object) new String[]{});
+            Class<? extends ActionInterface> actionClass = ActionClassRegistry.getActionClass(className);
+            if (actionClass == null) {
+                throw new Exception("Ingen klass hittas för: " + className);
+            }
+            ActionInterface action = actionClass.getDeclaredConstructor().newInstance();
+            action.execute();
         } catch (Exception e) {
             System.out.println("Alternativ: " + userOptionResult.option() + " kan inte exekveras");
             System.out.println("\"" + userOptionResult.title() + "\"" + " kan inte utföras");
-//            System.out.println("Välj ett nytt alternativ");
             throw e;
+
         }
     }
 }

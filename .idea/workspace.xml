@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Adjust format for className">
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Enhanced user experience menu options">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="electricity.prices.actions" />
       <recent name="electricity.prices" />
     </key>
   </component>
@@ -78,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="68457000" />
+      <workItem from="1724381805226" duration="81476000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -143,7 +146,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1724458081549</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Enhanced user experience menu options">
+      <option name="closed" value="true" />
+      <created>1724494196055</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1724494196055</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +169,8 @@
     <MESSAGE value="UserOptionResult to Record Class" />
     <MESSAGE value="Dynamic handle of users menu option, error handling of Main &amp; read users option" />
     <MESSAGE value="Adjust format for className" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjust format for className" />
+    <MESSAGE value="Enhanced user experience menu options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced user experience menu options" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
