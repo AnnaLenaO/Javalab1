@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Enhanced user experience for input prices">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/HandleUserInputPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/PrintInputPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/ReadUserInputPrice.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactored code, packages &amp; classes for enhanced project structure &amp; quality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/Input.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/HandleUserMenuOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ReadUserMenuOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/UserOptionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="148664000" />
+      <workItem from="1724381805226" duration="157928000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -195,7 +182,14 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1724601878594</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Refactored code, packages &amp; classes for enhanced project structure &amp; quality">
+      <option name="closed" value="true" />
+      <created>1724619335365</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1724619335365</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +210,8 @@
     <MESSAGE value="Separate class for application flow, Exit class to handle extra logic except exit application" />
     <MESSAGE value="Partly implemented logic for action Input" />
     <MESSAGE value="Enhanced user experience for input prices" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhanced user experience for input prices" />
+    <MESSAGE value="Refactored code, packages &amp; classes for enhanced project structure &amp; quality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored code, packages &amp; classes for enhanced project structure &amp; quality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
