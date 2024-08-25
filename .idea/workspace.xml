@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Interface for dynamically get package name &amp; execute user choice of action">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Separate class for application flow, Exit class to handle extra logic except exit application">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/HandleUserOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/user/options/ReadUserOption.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -80,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="94988000" />
+      <workItem from="1724381805226" duration="114385000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -159,7 +168,14 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1724510523958</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Separate class for application flow, Exit class to handle extra logic except exit application">
+      <option name="closed" value="true" />
+      <created>1724527303023</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1724527303023</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +193,8 @@
     <MESSAGE value="Adjust format for className" />
     <MESSAGE value="Enhanced user experience menu options" />
     <MESSAGE value="Interface for dynamically get package name &amp; execute user choice of action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface for dynamically get package name &amp; execute user choice of action" />
+    <MESSAGE value="Separate class for application flow, Exit class to handle extra logic except exit application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate class for application flow, Exit class to handle extra logic except exit application" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,7 +1,7 @@
 package electricity.prices.app.flow;
 
 import electricity.prices.user.options.HandleUserOption;
-import electricity.prices.user.options.ReadUserInput;
+import electricity.prices.user.options.ReadUserOption;
 import electricity.prices.user.options.UserOptionResult;
 
 import java.util.Scanner;
@@ -17,12 +17,12 @@ public class ApplicationFlow {
         boolean restarting = true;
 
         while (restarting) {
-            ReadUserInput readUserInput = new ReadUserInput(sc);
+            ReadUserOption readUserOption = new ReadUserOption(sc);
 
             try {
-                UserOptionResult userOptionResult = readUserInput.readUserOption();
-                new HandleUserOption(userOptionResult);
-                if(userOptionResult.option().equalsIgnoreCase("e")) {
+                UserOptionResult userOptionResult = readUserOption.readUserOption();
+                new HandleUserOption(userOptionResult, sc);
+                if (userOptionResult.option().equalsIgnoreCase("e")) {
                     restarting = false;
                 }
             } catch (Exception e) {

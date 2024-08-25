@@ -6,10 +6,10 @@ import electricity.prices.menu.PrintMenu;
 
 import java.util.Scanner;
 
-public class ReadUserInput {
+public class ReadUserOption {
     private final Scanner sc;
 
-    public ReadUserInput(Scanner sc) {
+    public ReadUserOption(Scanner sc) {
         this.sc = sc;
     }
 
