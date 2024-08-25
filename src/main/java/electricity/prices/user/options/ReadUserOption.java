@@ -26,6 +26,7 @@ public class ReadUserOption {
                     return new UserOptionResult(userMenuOption, line.getTitle(), line.getClassName());
                 }
             }
+
             System.out.println("Ogiltigt val, försök igen");
         }
     }

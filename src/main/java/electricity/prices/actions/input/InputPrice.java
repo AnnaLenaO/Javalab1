@@ -11,6 +11,7 @@ public class InputPrice {
 
     private static List<InputPriceLine> createInputPrice() {
         List<InputPriceLine> inputPriceLines = new ArrayList<>();
+
         for (int hour = 0; hour < 24; hour++) {
             String hourString = String.format("%02d-%02d", hour, (hour + 1) % 24);
             Integer priceInteger = 0;
@@ -18,7 +19,6 @@ public class InputPrice {
 
             inputPriceLines.add(new InputPriceLine(hourString, priceInteger, unitString));
         }
-
         return inputPriceLines;
     }
 

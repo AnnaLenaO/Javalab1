@@ -29,6 +29,9 @@ public class InputPriceLine {
     }
 
     public void setPrice(Integer price) {
+        if (price == null) {
+            throw new IllegalArgumentException("Price cannot be empty");
+        }
         this.price = price;
     }
 

@@ -22,6 +22,7 @@ public class ApplicationFlow {
             try {
                 UserOptionResult userOptionResult = readUserOption.readUserOption();
                 new HandleUserOption(userOptionResult, sc);
+
                 if (userOptionResult.option().equalsIgnoreCase("e")) {
                     restarting = false;
                 }
@@ -29,12 +30,14 @@ public class ApplicationFlow {
                 System.out.println("Fel: " + e.getMessage());
                 System.out.println("Försöka igen? (y)");
                 String input = sc.nextLine();
+
                 if (!input.equalsIgnoreCase("y")) {
                     System.out.println("Du valde inte \"y\"");
                     restarting = false;
                 }
             }
         }
+
         sc.close();
         System.out.println("Programmet avslutas");
     }

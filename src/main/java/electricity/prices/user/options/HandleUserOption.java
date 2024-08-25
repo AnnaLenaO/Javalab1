@@ -20,16 +20,17 @@ public class HandleUserOption {
 
         try {
             Class<? extends ActionInterface> actionClass = ActionClassRegistry.getActionClass(className);
+
             if (actionClass == null) {
                 throw new Exception("Ingen klass " + "\"" + className + "\"" + " hittades");
             }
+
             ActionInterface action = actionClass.getDeclaredConstructor().newInstance();
             action.execute(userOptionResult, sc);
         } catch (Exception e) {
             System.out.println("Alternativ: " + userOptionResult.option() + " kan inte exekveras");
             System.out.println("\"" + userOptionResult.title() + "\"" + " kan inte utföras");
             throw e;
-
         }
     }
 }
