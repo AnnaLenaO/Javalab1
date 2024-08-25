@@ -1,9 +1,9 @@
 package electricity.prices.actions;
 
-import electricity.prices.user.options.UserOptionResult;
+import electricity.prices.menu.UserMenuOptionResult;
 
 import java.util.Scanner;
 
 public interface ActionInterface {
-    void execute(UserOptionResult userOptionResult, Scanner sc);
+    void execute(UserMenuOptionResult userOptionResult, Scanner sc);
 }

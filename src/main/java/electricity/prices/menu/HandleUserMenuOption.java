@@ -1,15 +1,15 @@
-package electricity.prices.user.options;
+package electricity.prices.menu;
 
 import electricity.prices.actions.ActionClassRegistry;
 import electricity.prices.actions.ActionInterface;
 
 import java.util.Scanner;
 
-public class HandleUserOption {
-    private final UserOptionResult userOptionResult;
+public class HandleUserMenuOption {
+    private final UserMenuOptionResult userOptionResult;
     private final Scanner sc;
 
-    public HandleUserOption(UserOptionResult userOptionResult, Scanner sc) throws Exception {
+    public HandleUserMenuOption(UserMenuOptionResult userOptionResult, Scanner sc) throws Exception {
         this.userOptionResult = userOptionResult;
         this.sc = sc;
         handleOption();

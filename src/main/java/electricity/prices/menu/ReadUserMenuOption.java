@@ -1,19 +1,15 @@
-package electricity.prices.user.options;
-
-import electricity.prices.menu.Menu;
-import electricity.prices.menu.MenuLine;
-import electricity.prices.menu.PrintMenu;
+package electricity.prices.menu;
 
 import java.util.Scanner;
 
-public class ReadUserOption {
+public class ReadUserMenuOption {
     private final Scanner sc;
 
-    public ReadUserOption(Scanner sc) {
+    public ReadUserMenuOption(Scanner sc) {
         this.sc = sc;
     }
 
-    public UserOptionResult readUserOption() {
+    public UserMenuOptionResult readUserOption() {
         String userMenuOption;
 
         while (true) {
@@ -23,7 +19,7 @@ public class ReadUserOption {
 
             for (MenuLine line : Menu.getMenuLines()) {
                 if (line.isSelectable() && userMenuOption.equalsIgnoreCase(line.getOption())) {
-                    return new UserOptionResult(userMenuOption, line.getTitle(), line.getClassName());
+                    return new UserMenuOptionResult(userMenuOption, line.getTitle(), line.getClassName());
                 }
             }
 
