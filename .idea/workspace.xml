@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactored code, packages &amp; classes for enhanced project structure &amp; quality">
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="action MinMaxAvg calculations &amp; user interface">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/PrintMinMaxAvg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/HandleMinMaxAvg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="157928000" />
+      <workItem from="1724381805226" duration="167847000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -189,7 +192,14 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1724619335365</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="action MinMaxAvg calculations &amp; user interface">
+      <option name="closed" value="true" />
+      <created>1724629888841</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1724629888841</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +221,8 @@
     <MESSAGE value="Partly implemented logic for action Input" />
     <MESSAGE value="Enhanced user experience for input prices" />
     <MESSAGE value="Refactored code, packages &amp; classes for enhanced project structure &amp; quality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code, packages &amp; classes for enhanced project structure &amp; quality" />
+    <MESSAGE value="action MinMaxAvg calculations &amp; user interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="action MinMaxAvg calculations &amp; user interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
