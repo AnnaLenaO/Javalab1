@@ -1,7 +1,5 @@
 package electricity.prices.actions.input;
 
-import electricity.prices.menu.Menu;
-
 public class PrintInputPrice {
 
     public PrintInputPrice() {

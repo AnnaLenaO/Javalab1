@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactor to classes &amp; package for enhanced structure">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/CalculateMinMaxAvg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgLine.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactor for equal structure for the whole project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/HandleBestChargingTimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SlidingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SortAscending.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/HandleMinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/HandleMinMaxAvg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/PrintMinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/PrintMinMaxAvg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/CalculateMinMaxAvg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/HandleExit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/HandleUserInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/HandleUserInputPrice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/PrintInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/PrintInputPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ReadUserMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ReadUserMenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/HandleSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="213422000" />
+      <workItem from="1724381805226" duration="235096000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -217,7 +214,14 @@
       <option name="presentableId" value="LOCAL−00017" />
       <updated>1724675184655</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL−00018" summary="Refactor for equal structure for the whole project">
+      <option name="closed" value="true" />
+      <created>1724757469223</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1724757469223</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +245,8 @@
     <MESSAGE value="Refactored code, packages &amp; classes for enhanced project structure &amp; quality" />
     <MESSAGE value="action MinMaxAvg calculations &amp; user interface" />
     <MESSAGE value="Refactor to classes &amp; package for enhanced structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor to classes &amp; package for enhanced structure" />
+    <MESSAGE value="Refactor for equal structure for the whole project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor for equal structure for the whole project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

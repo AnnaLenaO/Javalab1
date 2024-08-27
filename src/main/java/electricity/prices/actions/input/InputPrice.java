@@ -1,6 +1,7 @@
 package electricity.prices.actions.input;
 
 import java.util.ArrayList;
+//import java.util.Collections;
 import java.util.List;
 
 public class InputPrice {
@@ -17,6 +18,7 @@ public class InputPrice {
             inputPriceLines.add(new InputPriceLine(hourString, priceInteger, unitString));
         }
         return inputPriceLines;
+//        return Collections.unmodifiableList(inputPriceLines);
     }
 
     public static List<InputPriceLine> getInputPriceLines() {
@@ -25,4 +27,13 @@ public class InputPrice {
         }
         return inputPriceLines;
     }
+
+//    ///to test immutable /////
+//    public static void setPrice(Integer index, Integer newPrice) {
+//        List<InputPriceLine> updatedInputPriceLines = new ArrayList<>(inputPriceLines);
+//        InputPriceLine inputPriceLine = updatedInputPriceLines.get(index);
+//        updatedInputPriceLines.set(index, new InputPriceLine(inputPriceLine.getHour(), newPrice, inputPriceLine.getUnit()));
+
+//        inputPriceLines = Collections.unmodifiableList(updatedInputPriceLines);
+//    }
 }

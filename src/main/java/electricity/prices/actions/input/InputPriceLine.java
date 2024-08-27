@@ -5,7 +5,9 @@ public class InputPriceLine {
     private Integer price;
     private final String unit;
 
-    InputPriceLine(String hour, Integer price, String unit) {
+    //public record InputPriceLine(String hour, Integer price, String unit) {
+    public InputPriceLine(String hour, Integer price, String unit) {
+//    public InputPriceLine {
         if (hour.isBlank()) {
             throw new IllegalArgumentException("Hour cannot be empty");
         }

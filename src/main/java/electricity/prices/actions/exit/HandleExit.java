@@ -5,7 +5,7 @@ import electricity.prices.menu.UserMenuOptionResult;
 
 import java.util.Scanner;
 
-public class Exit implements ActionInterface {
+public class HandleExit implements ActionInterface {
     public void execute(UserMenuOptionResult userOptionResult, Scanner sc) {
         System.out.println("Du har valt " + "\"" + userOptionResult.title() + "\"");
     }

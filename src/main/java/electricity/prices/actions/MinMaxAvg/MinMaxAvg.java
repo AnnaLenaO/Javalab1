@@ -6,6 +6,7 @@ import electricity.prices.calculations.MinMaxAvgCalc;
 import static electricity.prices.actions.input.InputPrice.getInputPriceLines;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.OptionalInt;
 
@@ -44,13 +45,15 @@ public class MinMaxAvg {
         minMaxAvgLines.add(new MinMaxAvgLine<>("Billigast", minPriceString, minHours, unitString));
         minMaxAvgLines.add(new MinMaxAvgLine<>("Dyrast", maxPriceString, maxHours, unitString));
         minMaxAvgLines.add(new MinMaxAvgLine<>("Dygnets medelpris", avgPriceString, avgHours, unitString));
-        return minMaxAvgLines;
+        return Collections.unmodifiableList(minMaxAvgLines);
+//        return minMaxAvgLines; //if no return Collections.unmodifiableList(minMaxAvgLines);
     }
 
     public static List<MinMaxAvgLine<?>> getMinMaxAvgLines() {
         if (minMaxAvgLines == null) {
             minMaxAvgLines = createMinMaxAvg();
         }
-        return minMaxAvgLines;
+//        return minMaxAvgLines; //does not update when new inputPrices
+        return createMinMaxAvg();
     }
 }
