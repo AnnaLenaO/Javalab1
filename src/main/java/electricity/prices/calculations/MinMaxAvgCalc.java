@@ -14,7 +14,7 @@ public class MinMaxAvgCalc {
         return priceLines.stream().mapToInt(InputPriceLine::getPrice).max();
     }
 
-    public float avgPrice(List<InputPriceLine> priceLines) {
+    public float avgValue(List<InputPriceLine> priceLines) {
         return (float) (priceLines.stream().mapToInt(InputPriceLine::getPrice).sum()) / priceLines.size();
     }
 }

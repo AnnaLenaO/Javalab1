@@ -7,9 +7,6 @@ public class Menu {
 
     private static List<MenuLine> menuLines;
 
-    private Menu() {
-    }
-
     private static List<MenuLine> createMenu() {
         List<MenuLine> menuLines = new ArrayList<MenuLine>();
         menuLines.add(new MenuLine("", "Elpriser", "NoClassName", false));

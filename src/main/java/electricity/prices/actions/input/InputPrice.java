@@ -6,9 +6,6 @@ import java.util.List;
 public class InputPrice {
     private static List<InputPriceLine> inputPriceLines;
 
-    private InputPrice() {
-    }
-
     private static List<InputPriceLine> createInputPrice() {
         List<InputPriceLine> inputPriceLines = new ArrayList<>();
 

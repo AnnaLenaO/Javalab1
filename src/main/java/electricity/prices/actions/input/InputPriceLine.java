@@ -39,7 +39,7 @@ public class InputPriceLine {
         return unit;
     }
 
-    //@Override
+    @Override
     public String toString() {
         return hour + " " + price + " " + unit;
     }

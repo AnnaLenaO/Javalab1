@@ -35,7 +35,7 @@ public class MenuLine {
         return isSelectable;
     }
 
-    //@Override
+    @Override
     public String toString() {
         if (option.isEmpty()) {
             return title;

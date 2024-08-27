@@ -11,17 +11,15 @@ public class HandleUserInputPrice implements ActionInterface {
 
     public void execute(UserMenuOptionResult userOptionResult, Scanner sc) {
         System.out.println("Du har valt " + "\"" + userOptionResult.title() + "\"");
-        ReadUserInputPrice readUserInput = new ReadUserInputPrice();
-        PrintInputPrice printInputPrice = new PrintInputPrice();
         int inputPriceLength = getInputPriceLines().size();
 
         for (int i = 0; i < inputPriceLength; i++) {
             String hour = getInputPriceLines().get(i).getHour();
-            int price = readUserInput.readUserInput(hour, sc);
+            int price = new ReadUserInputPrice().readUserInput(hour, sc);
             getInputPriceLines().get(i).setPrice(price);
         }
 
         System.out.println("Du har angett följande priser: ");
-        PrintInputPrice.printInputPrice();
+        new PrintInputPrice();
     }
 }

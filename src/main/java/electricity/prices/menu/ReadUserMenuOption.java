@@ -9,7 +9,7 @@ public class ReadUserMenuOption {
         this.sc = sc;
     }
 
-    public UserMenuOptionResult readUserOption() {
+    public UserMenuOptionResult readUserMenuOption() {
         String userMenuOption;
 
         while (true) {

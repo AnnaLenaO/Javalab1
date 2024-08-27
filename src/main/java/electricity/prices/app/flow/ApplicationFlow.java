@@ -20,7 +20,7 @@ public class ApplicationFlow {
             ReadUserMenuOption readUserOption = new ReadUserMenuOption(sc);
 
             try {
-                UserMenuOptionResult userOptionResult = readUserOption.readUserOption();
+                UserMenuOptionResult userOptionResult = readUserOption.readUserMenuOption();
                 new HandleUserMenuOption(userOptionResult, sc);
 
                 if (userOptionResult.option().equalsIgnoreCase("e")) {
