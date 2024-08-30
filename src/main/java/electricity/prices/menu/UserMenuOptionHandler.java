@@ -1,36 +1,33 @@
 package electricity.prices.menu;
 
-import electricity.prices.actions.ActionClassRegistry;
 import electricity.prices.actions.ActionInterface;
 
 import java.util.Scanner;
 
-public class HandleUserMenuOption {
+public class UserMenuOptionHandler {
     private final UserMenuOptionResult userOptionResult;
     private final Scanner sc;
 
-    public HandleUserMenuOption(UserMenuOptionResult userOptionResult, Scanner sc) throws Exception {
+    public UserMenuOptionHandler(UserMenuOptionResult userOptionResult, Scanner sc) throws Exception {
         this.userOptionResult = userOptionResult;
         this.sc = sc;
         handleOption();
     }
 
     private void handleOption() throws Exception {
-        String className = userOptionResult.className();
-
         try {
-            Class<? extends ActionInterface> actionClass = ActionClassRegistry.getActionClass(className);
+            Class<? extends ActionInterface> actionClass = ActionClassRegistry.getActionClass(userOptionResult.menuOption().getClass());
 
             if (actionClass == null) {
-                throw new Exception("Ingen klass " + "\"" + className + "\"" + " hittades");
+                throw new Exception("No class " + "\"" + userOptionResult.menuOption().getClass() + "\"" + "found");
             }
 
             ActionInterface action = actionClass.getDeclaredConstructor().newInstance();
             action.execute(userOptionResult, sc);
-        } catch (Exception e) {
+        } catch (Exception error) {
             System.out.println("Alternativ: " + userOptionResult.option() + " kan inte exekveras");
             System.out.println("\"" + userOptionResult.title() + "\"" + " kan inte utföras");
-            throw e;
+            throw error;
         }
     }
 }

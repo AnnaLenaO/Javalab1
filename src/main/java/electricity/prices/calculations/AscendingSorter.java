@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SortAscending {
+public class AscendingSorter {
     public List<InputPriceLine> sortAscending(List<InputPriceLine> priceLines) {
 
         return priceLines.stream().sorted(Comparator.comparing(InputPriceLine::getPrice)).collect(Collectors.toList());

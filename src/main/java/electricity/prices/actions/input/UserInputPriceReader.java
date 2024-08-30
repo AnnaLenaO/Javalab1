@@ -4,7 +4,7 @@ import static java.lang.Integer.parseInt;
 
 import java.util.Scanner;
 
-public class ReadUserInputPrice {
+public class UserInputPriceReader {
 
     public int readUserInput(String hour, Scanner sc) {
         int price;

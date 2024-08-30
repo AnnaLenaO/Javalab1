@@ -3,19 +3,17 @@ package electricity.prices.menu;
 public class MenuLine {
     private final String option;
     private final String title;
-    private final String className;
+    private final UserMenuOption menuOption;
     private final boolean isSelectable;
 
-    MenuLine(String option, String title, String className, boolean isSelectable) {
+    MenuLine(String option, String title, UserMenuOption menuOption, boolean isSelectable) {
         if (title.isBlank()) {
             throw new IllegalArgumentException("Title cannot be empty");
         }
-        if (className.isBlank()) {
-            throw new IllegalArgumentException("ClassName cannot be empty");
-        }
+
         this.option = option;
         this.title = title;
-        this.className = className;
+        this.menuOption = menuOption;
         this.isSelectable = isSelectable;
     }
 
@@ -27,8 +25,8 @@ public class MenuLine {
         return title;
     }
 
-    public String getClassName() {
-        return className;
+    public UserMenuOption getMenuOption() {
+        return menuOption;
     }
 
     public boolean isSelectable() {

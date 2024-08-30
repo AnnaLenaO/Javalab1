@@ -1,8 +1,8 @@
 package electricity.prices.actions.MinMaxAvg;
 
-public class PrintMinMaxAvg {
+public class MinMaxAvgPrinter {
 
-    public PrintMinMaxAvg() {
+    public MinMaxAvgPrinter() {
         printMinMaxAvg();
     }
 

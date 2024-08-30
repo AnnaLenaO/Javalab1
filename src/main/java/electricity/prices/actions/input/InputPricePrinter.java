@@ -1,8 +1,8 @@
 package electricity.prices.actions.input;
 
-public class PrintInputPrice {
+public class InputPricePrinter {
 
-    public PrintInputPrice() {
+    public InputPricePrinter() {
         printInputPrice();
     }
 

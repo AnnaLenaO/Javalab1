@@ -1,7 +1,7 @@
 package electricity.prices.menu;
 
-public class PrintMenu {
-    public PrintMenu() {
+public class MenuPrinter {
+    public MenuPrinter() {
         printMenu();
     }
 

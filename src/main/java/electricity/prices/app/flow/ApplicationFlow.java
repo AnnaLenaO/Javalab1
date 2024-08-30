@@ -1,7 +1,7 @@
 package electricity.prices.app.flow;
 
-import electricity.prices.menu.HandleUserMenuOption;
-import electricity.prices.menu.ReadUserMenuOption;
+import electricity.prices.menu.UserMenuOptionHandler;
+import electricity.prices.menu.UserMenuOptionReader;
 import electricity.prices.menu.UserMenuOptionResult;
 
 import java.util.Scanner;
@@ -11,34 +11,37 @@ public class ApplicationFlow {
 
     public ApplicationFlow() {
         this.sc = new Scanner(System.in);
+        runApplicationFlow();
+        sc.close();
+        System.out.println("Programmet avslutas");
     }
 
-    public void start() {
+    private void runApplicationFlow() {
         boolean restarting = true;
-
         while (restarting) {
-            ReadUserMenuOption readUserOption = new ReadUserMenuOption(sc);
-
             try {
+                UserMenuOptionReader readUserOption = new UserMenuOptionReader(sc);
                 UserMenuOptionResult userOptionResult = readUserOption.readUserMenuOption();
-                new HandleUserMenuOption(userOptionResult, sc);
+                new UserMenuOptionHandler(userOptionResult, sc);
 
                 if (userOptionResult.option().equalsIgnoreCase("e")) {
                     restarting = false;
                 }
-            } catch (Exception e) {
-                System.out.println("Fel: " + e.getMessage());
-                System.out.println("Försöka igen? (y)");
-                String input = sc.nextLine();
-
-                if (!input.equalsIgnoreCase("y")) {
-                    System.out.println("Du valde inte \"y\"");
-                    restarting = false;
-                }
+            } catch (Exception exception) {
+                restarting = handleExceptionRetry(exception);
             }
         }
+    }
 
-        sc.close();
-        System.out.println("Programmet avslutas");
+    private boolean handleExceptionRetry(Exception exception) {
+        System.out.println("Fel: " + exception.getMessage());
+        System.out.println("Försöka igen? (y)");
+        String input = sc.nextLine();
+
+        if (!input.equalsIgnoreCase("y")) {
+            System.out.println("Du valde inte \"y\"");
+            return false;
+        }
+        return true;
     }
 }

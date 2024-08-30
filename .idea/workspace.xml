@@ -4,20 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactor for equal structure for the whole project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/HandleBestChargingTimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SlidingWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SortAscending.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="action Sort &amp; changed refactoring for all actions to work">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SlidingWindowCalc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ActionClassRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/CalculateMinMaxAvg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionClassRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/HandleBestChargingTimes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/HandleMinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/HandleExit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/HandleUserInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/HandleUserInputPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/PrintMinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/HandleExit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/exit/ExitHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/HandleUserInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/UserInputPriceHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/PrintInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/PrintInputPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/HandleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/PrintInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPricePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/ReadUserInputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/UserInputPriceReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/HandleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/SortHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/app/flow/ApplicationFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SlidingWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SortAscending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/AscendingSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/HandleUserMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/PrintMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/MenuPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ReadUserMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="235096000" />
+      <workItem from="1724381805226" duration="325725000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -221,11 +238,29 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1724757469223</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="action Sort &amp; changed refactoring for all actions to work">
+      <option name="closed" value="true" />
+      <created>1724794550018</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1724794550018</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create &amp; print Menu" />
@@ -246,7 +281,8 @@
     <MESSAGE value="action MinMaxAvg calculations &amp; user interface" />
     <MESSAGE value="Refactor to classes &amp; package for enhanced structure" />
     <MESSAGE value="Refactor for equal structure for the whole project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor for equal structure for the whole project" />
+    <MESSAGE value="action Sort &amp; changed refactoring for all actions to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="action Sort &amp; changed refactoring for all actions to work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

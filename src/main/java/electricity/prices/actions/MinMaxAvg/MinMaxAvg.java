@@ -12,7 +12,7 @@ import java.util.OptionalInt;
 
 public class MinMaxAvg {
 
-    private static List<MinMaxAvgLine<?>> minMaxAvgLines;
+    private static List<MinMaxAvgLine<?>> minMaxAvgLines = new ArrayList<>();
 
     private static List<MinMaxAvgLine<?>> createMinMaxAvg() {
         final MinMaxAvgCalc minMaxAvgCalc = new MinMaxAvgCalc();
@@ -34,11 +34,11 @@ public class MinMaxAvg {
 
         for (InputPriceLine inputPriceLine : priceLines) {
             if (Integer.toString(inputPriceLine.getPrice()).equals(minPriceString)) {
-                minHours.append(inputPriceLine.getHour());
+                minHours.append(inputPriceLine.getHour()).append(" ");
             }
 
             if (Integer.toString(inputPriceLine.getPrice()).equals(maxPriceString)) {
-                maxHours.append(inputPriceLine.getHour());
+                maxHours.append(inputPriceLine.getHour()).append(" ");
             }
         }
 
@@ -46,14 +46,13 @@ public class MinMaxAvg {
         minMaxAvgLines.add(new MinMaxAvgLine<>("Dyrast", maxPriceString, maxHours, unitString));
         minMaxAvgLines.add(new MinMaxAvgLine<>("Dygnets medelpris", avgPriceString, avgHours, unitString));
         return Collections.unmodifiableList(minMaxAvgLines);
-//        return minMaxAvgLines; //if no return Collections.unmodifiableList(minMaxAvgLines);
     }
 
     public static List<MinMaxAvgLine<?>> getMinMaxAvgLines() {
-        if (minMaxAvgLines == null) {
+        if (minMaxAvgLines.isEmpty()) {
             minMaxAvgLines = createMinMaxAvg();
         }
-//        return minMaxAvgLines; //does not update when new inputPrices
+
         return createMinMaxAvg();
     }
 }
