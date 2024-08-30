@@ -12,13 +12,13 @@ import java.util.OptionalInt;
 
 public class MinMaxAvg {
 
-    private static List<MinMaxAvgLine<?>> minMaxAvgLines = new ArrayList<>();
+    private static List<MinMaxAvgLine> minMaxAvgLines = new ArrayList<>();
 
-    private static List<MinMaxAvgLine<?>> createMinMaxAvg() {
+    private static List<MinMaxAvgLine> createMinMaxAvg() {
         final MinMaxAvgCalc minMaxAvgCalc = new MinMaxAvgCalc();
 
         List<InputPriceLine> priceLines = getInputPriceLines();
-        List<MinMaxAvgLine<?>> minMaxAvgLines = new ArrayList<>();
+        List<MinMaxAvgLine> minMaxAvgLines = new ArrayList<>();
 
         OptionalInt minPrice = minMaxAvgCalc.minValue(priceLines);
         String minPriceString = minPrice.isPresent() ? minPrice.getAsInt() + "" : "0";
@@ -34,21 +34,21 @@ public class MinMaxAvg {
 
         for (InputPriceLine inputPriceLine : priceLines) {
             if (Integer.toString(inputPriceLine.getPrice()).equals(minPriceString)) {
-                minHours.append(inputPriceLine.getHour()).append(" ");
+                minHours.append(inputPriceLine.getHour()).append(", ");
             }
 
             if (Integer.toString(inputPriceLine.getPrice()).equals(maxPriceString)) {
-                maxHours.append(inputPriceLine.getHour()).append(" ");
+                maxHours.append(inputPriceLine.getHour()).append(", ");
             }
         }
 
-        minMaxAvgLines.add(new MinMaxAvgLine<>("Billigast", minPriceString, minHours, unitString));
-        minMaxAvgLines.add(new MinMaxAvgLine<>("Dyrast", maxPriceString, maxHours, unitString));
-        minMaxAvgLines.add(new MinMaxAvgLine<>("Dygnets medelpris", avgPriceString, avgHours, unitString));
+        minMaxAvgLines.add(new MinMaxAvgLine("Billigast", minPriceString, minHours, unitString));
+        minMaxAvgLines.add(new MinMaxAvgLine("Dyrast", maxPriceString, maxHours, unitString));
+        minMaxAvgLines.add(new MinMaxAvgLine("Dygnets medelpris", avgPriceString, avgHours, unitString));
         return Collections.unmodifiableList(minMaxAvgLines);
     }
 
-    public static List<MinMaxAvgLine<?>> getMinMaxAvgLines() {
+    public static List<MinMaxAvgLine> getMinMaxAvgLines() {
         if (minMaxAvgLines.isEmpty()) {
             minMaxAvgLines = createMinMaxAvg();
         }

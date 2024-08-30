@@ -26,12 +26,13 @@ public class BestChargingTime {
         StringBuilder sb = new StringBuilder();
 
         for (BestChargingTimeLine line : bestChargingTimeLines) {
-            sb.append(line.hour()).append(": ").append(line.price()).append(line.unit());
+            sb.append(line.hour()).append(": ").append(line.price()).append(" ").append(line.unit());
             sb.append("\n");
         }
 
         String unit = bestChargingTimeLines.getFirst().unit();
-        sb.append("Timmarnas medelpris: ").append(averagePrice).append(unit);
+        sb.append("Timmarnas medelpris: ").append(averagePrice).append(" ").append(unit);
+        sb.append("\n");
 
         return sb.toString();
     }

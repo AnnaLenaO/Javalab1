@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactor handling exceptions">
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="get &quot;öre/kWh&quot; from inputPriceLine &amp; BestChargingTimeLine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="340091000" />
+      <workItem from="1724381805226" duration="341193000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -234,7 +233,14 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1725015983937</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="get &quot;öre/kWh&quot; from inputPriceLine &amp; BestChargingTimeLine">
+      <option name="closed" value="true" />
+      <created>1725019795019</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1725019795019</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +279,8 @@
     <MESSAGE value="action Sort &amp; changed refactoring for all actions to work" />
     <MESSAGE value="Best charging hours, refactor code, sealed type Menu options" />
     <MESSAGE value="Refactor handling exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor handling exceptions" />
+    <MESSAGE value="get &quot;öre/kWh&quot; from inputPriceLine &amp; BestChargingTimeLine" />
+    <option name="LAST_COMMIT_MESSAGE" value="get &quot;öre/kWh&quot; from inputPriceLine &amp; BestChargingTimeLine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
