@@ -1,4 +1,4 @@
 package electricity.prices.actions.BestChargingTime;
 
-public record BestChargingTimeLine(String hour, Integer price) {
+public record BestChargingTimeLine(String hour, Integer price, String unit) {
 }

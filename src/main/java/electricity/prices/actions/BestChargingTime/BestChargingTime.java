@@ -15,7 +15,7 @@ public class BestChargingTime {
 
         for (int i = startIndex; i < startIndex + 4; i++) {
             InputPriceLine inputPriceLine = priceLines.get(i);
-            bestChargingTimeLines.add(new BestChargingTimeLine(inputPriceLine.getHour(), inputPriceLine.getPrice()));
+            bestChargingTimeLines.add(new BestChargingTimeLine(inputPriceLine.getHour(), inputPriceLine.getPrice(), inputPriceLine.getUnit()));
             totalPrice += inputPriceLine.getPrice();
         }
 
@@ -24,11 +24,14 @@ public class BestChargingTime {
 
     public static String getBestChargingTimeData() {
         StringBuilder sb = new StringBuilder();
+
         for (BestChargingTimeLine line : bestChargingTimeLines) {
-            sb.append(line.hour()).append(": ").append(line.price()).append(" öre/kWh");
+            sb.append(line.hour()).append(": ").append(line.price()).append(line.unit());
             sb.append("\n");
         }
-        sb.append("Timmarnas medelpris: ").append(averagePrice).append(" öre/kWh");
+
+        String unit = bestChargingTimeLines.getFirst().unit();
+        sb.append("Timmarnas medelpris: ").append(averagePrice).append(unit);
 
         return sb.toString();
     }

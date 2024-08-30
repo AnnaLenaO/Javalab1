@@ -30,7 +30,7 @@ public class MinMaxAvg {
         StringBuilder minHours = new StringBuilder();
         StringBuilder maxHours = new StringBuilder();
         StringBuilder avgHours = new StringBuilder();
-        String unitString = "öre/kWh";
+        String unitString = priceLines.getFirst().getUnit();
 
         for (InputPriceLine inputPriceLine : priceLines) {
             if (Integer.toString(inputPriceLine.getPrice()).equals(minPriceString)) {

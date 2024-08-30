@@ -8,7 +8,7 @@ public class Menu {
     private static final List<MenuLine> menuLines = createMenu();
 
     private static List<MenuLine> createMenu() {
-        List<MenuLine> menuLines = new ArrayList<MenuLine>();
+        List<MenuLine> menuLines = new ArrayList<>();
         menuLines.add(new MenuLine("", "Elpriser", new Headline(), false));
         menuLines.add(new MenuLine("", "========", new Underline(), false));
         menuLines.add(new MenuLine("1", "Inmatning", new Input(), true));
