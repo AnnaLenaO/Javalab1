@@ -1,7 +1,7 @@
 package electricity.prices.menu;
 
 
-public abstract sealed class UserMenuOption permits Headline, Underline, Input, MinMaxAvg, Sort, BestChargingTime, Exit {
+public abstract sealed class UserMenuOption permits Headline, Underline, Input, CsvInput, MinMaxAvg, Sort, BestChargingTime, Exit {
 
 }
 
@@ -14,6 +14,10 @@ final class Underline extends UserMenuOption {
 }
 
 final class Input extends UserMenuOption {
+}
+
+final class CsvInput extends UserMenuOption {
+
 }
 
 final class MinMaxAvg extends UserMenuOption {

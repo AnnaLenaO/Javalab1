@@ -2,6 +2,7 @@ package electricity.prices.menu;
 
 import electricity.prices.actions.ActionInterface;
 import electricity.prices.actions.BestChargingTime.BestChargingTimeHandler;
+import electricity.prices.actions.CsvInput.CsvInputHandler;
 import electricity.prices.actions.MinMaxAvg.MinMaxAvgHandler;
 import electricity.prices.actions.exit.ExitHandler;
 import electricity.prices.actions.input.UserInputPriceHandler;
@@ -15,6 +16,7 @@ public class ActionClassRegistry {
 
     static {
         actionClassMap.put(Input.class, UserInputPriceHandler.class);
+        actionClassMap.put(CsvInput.class, CsvInputHandler.class);
         actionClassMap.put(MinMaxAvg.class, MinMaxAvgHandler.class);
         actionClassMap.put(Sort.class, SortHandler.class);
         actionClassMap.put(BestChargingTime.class, BestChargingTimeHandler.class);
