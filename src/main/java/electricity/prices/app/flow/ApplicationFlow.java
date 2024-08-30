@@ -11,12 +11,12 @@ public class ApplicationFlow {
 
     public ApplicationFlow() {
         this.sc = new Scanner(System.in);
-        runApplicationFlow();
+        runAppFlow();
         sc.close();
         System.out.println("Programmet avslutas");
     }
 
-    private void runApplicationFlow() {
+    private void runAppFlow() {
         boolean restarting = true;
         while (restarting) {
             try {
@@ -28,12 +28,17 @@ public class ApplicationFlow {
                     restarting = false;
                 }
             } catch (Exception exception) {
-                restarting = handleExceptionRetry(exception);
+                restarting = handleExceptionAppFlow(exception);
             }
         }
     }
 
-    private boolean handleExceptionRetry(Exception exception) {
+    private boolean handleExceptionAppFlow(Exception exception) {
+        if (exception instanceof IllegalArgumentException) {
+            System.out.println("Fel: " + exception.getMessage());
+            return false;
+        }
+
         System.out.println("Fel: " + exception.getMessage());
         System.out.println("Försöka igen? (y)");
         String input = sc.nextLine();

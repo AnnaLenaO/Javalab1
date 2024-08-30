@@ -26,10 +26,9 @@ public class UserMenuOptionReader {
                 }
             }
 
-            System.out.println("Ogiltigt val, försök igen (" + times + "/" + MAX_TIMES + ")");
+            System.out.println("Ogiltigt val, försök nummer (" + times + "/" + MAX_TIMES + "):");
         }
 
-        System.out.println("Inga försök kvar, programmet avslutas");
         throw new IllegalArgumentException("Illegal option, max attempts of " + MAX_TIMES);
     }
 }

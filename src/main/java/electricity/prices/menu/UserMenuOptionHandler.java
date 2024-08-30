@@ -24,10 +24,10 @@ public class UserMenuOptionHandler {
 
             ActionInterface action = actionClass.getDeclaredConstructor().newInstance();
             action.execute(userOptionResult, sc);
-        } catch (Exception error) {
+        } catch (Exception exception) {
             System.out.println("Alternativ: " + userOptionResult.option() + " kan inte exekveras");
             System.out.println("\"" + userOptionResult.title() + "\"" + " kan inte utföras");
-            throw error;
+            throw exception;
         }
     }
 }
