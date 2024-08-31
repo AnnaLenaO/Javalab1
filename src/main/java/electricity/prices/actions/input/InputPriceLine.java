@@ -1,9 +1,21 @@
 package electricity.prices.actions.input;
 
+import com.opencsv.bean.CsvBindByPosition;
+import com.opencsv.bean.CsvCustomBindByPosition;
+import electricity.prices.actions.CsvInput.CsvInputBean;
+
 public class InputPriceLine {
-    private final String hour;
+    @CsvBindByPosition(position = 0)
+    private String hour;
+
+    @CsvCustomBindByPosition(position = 1, converter = CsvInputBean.StringPriceToInteger.class)
     private Integer price;
-    private final String unit;
+
+    @CsvBindByPosition(position = 2)
+    private String unit;
+
+    public InputPriceLine() {
+    }
 
     public InputPriceLine(String hour, Integer price, String unit) {
         if (hour.isBlank()) {

@@ -25,4 +25,8 @@ public class InputPrice {
         }
         return inputPriceLines;
     }
+
+    public static void setInputPriceLines(List<InputPriceLine> csvBeanPriceLines) {
+        inputPriceLines = new ArrayList<>(csvBeanPriceLines);
+    }
 }

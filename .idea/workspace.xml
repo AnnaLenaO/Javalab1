@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Changed generics T price to String price, fixed line braks etc">
-      <change afterPath="$PROJECT_DIR$/elpriser.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputHandler.java" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="New menuLine &quot;Inläsning från CSV&quot; &amp; action class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ActionClassRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elpriser.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +48,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CsvInputBean.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Menu.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "database.data.extractors.current.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -59,7 +66,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,10 +74,49 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="electricity.prices.actions.CsvInput" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ALO\YH Systemutvecklare\IntelliJ\9.Java\javalab1\src\main\resources" />
+      <recent name="C:\ALO\YH Systemutvecklare\IntelliJ\9.Java\javalab1" />
+      <recent name="C:\ALO\YH Systemutvecklare\IntelliJ\9.Java\javalab1\src\main\resources\csvfileer" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="electricity.prices.actions" />
       <recent name="electricity.prices" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CsvInputBean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="electricity.prices.actions.CsvInput.CsvInputBean" />
+      <module name="javalab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="electricity.prices.actions.CsvInput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="electricity.prices.Main" />
+      <module name="javalab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="electricity.prices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CsvInputBean" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -89,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="348082000" />
+      <workItem from="1724381805226" duration="410195000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -252,7 +298,14 @@
       <option name="presentableId" value="LOCAL−00023" />
       <updated>1725021087424</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL−00024" summary="New menuLine &quot;Inläsning från CSV&quot; &amp; action class">
+      <option name="closed" value="true" />
+      <created>1725028852898</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1725028852898</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +346,8 @@
     <MESSAGE value="Refactor handling exceptions" />
     <MESSAGE value="get &quot;öre/kWh&quot; from inputPriceLine &amp; BestChargingTimeLine" />
     <MESSAGE value="Changed generics T price to String price, fixed line braks etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed generics T price to String price, fixed line braks etc" />
+    <MESSAGE value="New menuLine &quot;Inläsning från CSV&quot; &amp; action class" />
+    <option name="LAST_COMMIT_MESSAGE" value="New menuLine &quot;Inläsning från CSV&quot; &amp; action class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -305,5 +359,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
