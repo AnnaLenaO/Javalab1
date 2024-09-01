@@ -5,10 +5,7 @@ import electricity.prices.calculations.MinMaxAvgCalc;
 
 import static electricity.prices.actions.input.InputPrice.getInputPriceLines;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.OptionalInt;
+import java.util.*;
 
 public class MinMaxAvg {
 
@@ -24,8 +21,8 @@ public class MinMaxAvg {
         String minPriceString = minPrice.isPresent() ? minPrice.getAsInt() + "" : "0";
         OptionalInt maxPrice = minMaxAvgCalc.maxValue(priceLines);
         String maxPriceString = maxPrice.isPresent() ? maxPrice.getAsInt() + "" : "0";
-        float avgPrice = minMaxAvgCalc.avgValue(priceLines);
-        String avgPriceString = String.valueOf(Math.round(avgPrice));
+        OptionalDouble avgPrice = minMaxAvgCalc.avgValue(priceLines);
+        String avgPriceString = String.format("%.0f", avgPrice.isPresent() ? avgPrice.getAsDouble() : 0);
 
         StringBuilder minHours = new StringBuilder();
         StringBuilder maxHours = new StringBuilder();

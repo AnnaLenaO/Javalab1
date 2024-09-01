@@ -1,6 +1,7 @@
 package electricity.prices.menu;
 
 import electricity.prices.actions.ActionInterface;
+
 import electricity.prices.actions.BestChargingTime.BestChargingTimeHandler;
 import electricity.prices.actions.CsvInput.CsvInputHandler;
 import electricity.prices.actions.MinMaxAvg.MinMaxAvgHandler;

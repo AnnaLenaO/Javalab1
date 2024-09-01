@@ -4,11 +4,12 @@ import electricity.prices.actions.input.InputPriceLine;
 
 import java.util.List;
 
-public class SlidingWindowCalc {
-    public static int findBestChargingTimeStartIndex(List<InputPriceLine> priceLines) {
+public class CheapestStartIndex {
+    public static int getCheapestStartIndex(List<InputPriceLine> priceLines) {
+
         int startIndex = 0;
-        int currentFourHourPrice = getFirstFourHourPrice(priceLines);
-        int minFourHourPrice = currentFourHourPrice;
+        int minFourHourPrice = getFirstFourHourPrice(priceLines);
+        int currentFourHourPrice = minFourHourPrice;
 
         for (int i = 4; i < priceLines.size(); i++) {
             currentFourHourPrice += priceLines.get(i).getPrice() - priceLines.get(i - 4).getPrice();

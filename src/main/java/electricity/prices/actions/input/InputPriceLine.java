@@ -3,8 +3,9 @@ package electricity.prices.actions.input;
 import com.opencsv.bean.CsvBindByPosition;
 import com.opencsv.bean.CsvCustomBindByPosition;
 import electricity.prices.actions.CsvInput.CsvInputBean;
+import electricity.prices.actions.PriceLineInterface;
 
-public class InputPriceLine {
+public class InputPriceLine implements PriceLineInterface {
     @CsvBindByPosition(position = 0)
     private String hour;
 
@@ -36,6 +37,7 @@ public class InputPriceLine {
         return hour;
     }
 
+    @Override
     public Integer getPrice() {
         return price;
     }

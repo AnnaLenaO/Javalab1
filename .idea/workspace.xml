@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="New menuLine &quot;Inläsning från CSV&quot; &amp; action class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Complete menu option &amp; action for &quot;inläsning från csv&quot; &amp; csv-file.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeAndAvg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/PriceLineInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/CheapestStartIndex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elpriser.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/ActionInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/CsvInput/CsvInputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPriceLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/SlidingWindowCalc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ActionClassRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/ActionClassRegistry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="410195000" />
+      <workItem from="1724381805226" duration="443197000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -305,7 +308,14 @@
       <option name="presentableId" value="LOCAL−00024" />
       <updated>1725028852898</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL−00025" summary="Complete menu option &amp; action for &quot;inläsning från csv&quot; &amp; csv-file.">
+      <option name="closed" value="true" />
+      <created>1725135313098</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1725135313098</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +357,8 @@
     <MESSAGE value="get &quot;öre/kWh&quot; from inputPriceLine &amp; BestChargingTimeLine" />
     <MESSAGE value="Changed generics T price to String price, fixed line braks etc" />
     <MESSAGE value="New menuLine &quot;Inläsning från CSV&quot; &amp; action class" />
-    <option name="LAST_COMMIT_MESSAGE" value="New menuLine &quot;Inläsning från CSV&quot; &amp; action class" />
+    <MESSAGE value="Complete menu option &amp; action for &quot;inläsning från csv&quot; &amp; csv-file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete menu option &amp; action for &quot;inläsning från csv&quot; &amp; csv-file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

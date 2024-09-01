@@ -1,4 +1,10 @@
 package electricity.prices.actions.BestChargingTime;
 
-public record BestChargingTimeLine(String hour, Integer price, String unit) {
+import electricity.prices.actions.PriceLineInterface;
+
+public record BestChargingTimeLine(String hour, Integer price, String unit) implements PriceLineInterface {
+    @Override
+    public Integer getPrice() {
+        return price;
+    }
 }

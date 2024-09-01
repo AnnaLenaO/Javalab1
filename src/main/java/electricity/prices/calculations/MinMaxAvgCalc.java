@@ -1,20 +1,22 @@
 package electricity.prices.calculations;
 
+import electricity.prices.actions.PriceLineInterface;
 import electricity.prices.actions.input.InputPriceLine;
 
 import java.util.List;
+import java.util.OptionalDouble;
 import java.util.OptionalInt;
 
 public class MinMaxAvgCalc {
-    public OptionalInt minValue(List<InputPriceLine> priceLines) {
-        return priceLines.stream().mapToInt(InputPriceLine::getPrice).min();
+    public OptionalInt minValue(List<? extends PriceLineInterface> priceLines) {
+        return priceLines.stream().mapToInt(PriceLineInterface::getPrice).min();
     }
 
-    public OptionalInt maxValue(List<InputPriceLine> priceLines) {
-        return priceLines.stream().mapToInt(InputPriceLine::getPrice).max();
+    public OptionalInt maxValue(List<? extends PriceLineInterface> priceLines) {
+        return priceLines.stream().mapToInt(PriceLineInterface::getPrice).max();
     }
 
-    public float avgValue(List<InputPriceLine> priceLines) {
-        return (float) (priceLines.stream().mapToInt(InputPriceLine::getPrice).sum()) / priceLines.size();
+    public OptionalDouble avgValue(List<? extends PriceLineInterface> priceLines) {
+        return (priceLines.stream().mapToInt(PriceLineInterface::getPrice).average());
     }
 }

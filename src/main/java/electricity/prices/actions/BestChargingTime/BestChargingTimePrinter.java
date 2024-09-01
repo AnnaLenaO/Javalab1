@@ -6,6 +6,6 @@ public class BestChargingTimePrinter {
     }
 
     private void printBestChargingTime() {
-        System.out.println(BestChargingTime.getBestChargingTimeData());
+        System.out.println(BestChargingTimeAndAvg.bestChargingTimeLinesAndAvg());
     }
 }
