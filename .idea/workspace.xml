@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactor Best charging time: InStream.range(), forEach, extract code, interface for PriceLine to reuse MinMaxAvg">
+    <list default="true" id="80c7a7c5-6ef5-4241-a34e-1cc8038f0dbc" name="Changes" comment="Refactor: extract code, IntStream, forEach, copyOf, int numberOfHours for sep of concern etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeAndAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimeLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTimePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/BestChargingTime/BestChargingTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/MinMaxAvg/MinMaxAvgLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/InputPrice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/UserInputPriceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/input/UserInputPriceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/SortHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/actions/sort/SortHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/CheapestStartIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/CheapestStartIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/menu/UserMenuOptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/electricity/prices/calculations/MinMaxAvgCalc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724326607693</updated>
       <workItem from="1724326608842" duration="14709000" />
-      <workItem from="1724381805226" duration="454541000" />
+      <workItem from="1724381805226" duration="456319000" />
     </task>
     <task id="LOCAL−00001" summary="Create &amp; print Menu">
       <option name="closed" value="true" />
@@ -321,7 +313,14 @@
       <option name="presentableId" value="LOCAL−00026" />
       <updated>1725215779557</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL−00027" summary="Refactor: extract code, IntStream, forEach, copyOf, int numberOfHours for sep of concern etc">
+      <option name="closed" value="true" />
+      <created>1725227198103</created>
+      <option name="number" value="LOCAL−00027" />
+      <option name="presentableId" value="LOCAL−00027" />
+      <updated>1725227198103</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Read user option from menu" />
     <MESSAGE value="Separate class for read user input" />
     <MESSAGE value="Fixed redundant variable in readUserOption" />
     <MESSAGE value="Close Scanner" />
@@ -364,7 +362,8 @@
     <MESSAGE value="New menuLine &quot;Inläsning från CSV&quot; &amp; action class" />
     <MESSAGE value="Complete menu option &amp; action for &quot;inläsning från csv&quot; &amp; csv-file." />
     <MESSAGE value="Refactor Best charging time: InStream.range(), forEach, extract code, interface for PriceLine to reuse MinMaxAvg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Best charging time: InStream.range(), forEach, extract code, interface for PriceLine to reuse MinMaxAvg" />
+    <MESSAGE value="Refactor: extract code, IntStream, forEach, copyOf, int numberOfHours for sep of concern etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor: extract code, IntStream, forEach, copyOf, int numberOfHours for sep of concern etc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

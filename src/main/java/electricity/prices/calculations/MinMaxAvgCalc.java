@@ -1,7 +1,6 @@
 package electricity.prices.calculations;
 
 import electricity.prices.actions.PriceLineInterface;
-import electricity.prices.actions.input.InputPriceLine;
 
 import java.util.List;
 import java.util.OptionalDouble;

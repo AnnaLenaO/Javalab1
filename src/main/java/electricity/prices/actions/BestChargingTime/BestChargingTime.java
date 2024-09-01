@@ -47,14 +47,12 @@ public class BestChargingTime {
     }
 
     private static void createBestChargingTimeLines(StringBuilder sb) {
-        bestChargingTimeLines.forEach(line -> {
-            sb.append(line.hour())
-                    .append(": ")
-                    .append(line.price())
-                    .append(" ")
-                    .append(line.unit())
-                    .append("\n");
-        });
+        bestChargingTimeLines.forEach(line -> sb.append(line.hour())
+                .append(": ")
+                .append(line.price())
+                .append(" ")
+                .append(line.unit())
+                .append("\n"));
     }
 
     private static void createAvgPriceLine(StringBuilder sb) {

@@ -59,7 +59,6 @@ public class MinMaxAvg {
         minMaxAvgLines.add(new MinMaxAvgLine("Billigast", minMaxAvgResult.minPriceString(), minMaxAvgResult.minHours(), minMaxAvgResult.unitString()));
         minMaxAvgLines.add(new MinMaxAvgLine("Dyrast", minMaxAvgResult.maxPriceString(), minMaxAvgResult.maxHours(), minMaxAvgResult.unitString()));
         minMaxAvgLines.add(new MinMaxAvgLine("Dygnets medelpris", minMaxAvgResult.avgPriceString(), minMaxAvgResult.avgHours(), minMaxAvgResult.unitString()));
-        StringBuilder sb = new StringBuilder();
 
         return Collections.unmodifiableList(minMaxAvgLines);
     }
