@@ -13,10 +13,17 @@ public class MinMaxAvg {
 
     private static List<MinMaxAvgLine> createMinMaxAvg() {
         final MinMaxAvgCalc minMaxAvgCalc = new MinMaxAvgCalc();
-
         List<InputPriceLine> priceLines = getInputPriceLines();
         List<MinMaxAvgLine> minMaxAvgLines = new ArrayList<>();
 
+        final Result minMaxAvgResult = getMinMaxAvg(minMaxAvgCalc, priceLines);
+
+        getMinMaxHours(priceLines, minMaxAvgResult);
+
+        return setMinMaxAvgLines(minMaxAvgLines, minMaxAvgResult);
+    }
+
+    private static Result getMinMaxAvg(MinMaxAvgCalc minMaxAvgCalc, List<InputPriceLine> priceLines) {
         OptionalInt minPrice = minMaxAvgCalc.minValue(priceLines);
         String minPriceString = minPrice.isPresent() ? minPrice.getAsInt() + "" : "0";
         OptionalInt maxPrice = minMaxAvgCalc.maxValue(priceLines);
@@ -29,19 +36,31 @@ public class MinMaxAvg {
         StringBuilder avgHours = new StringBuilder();
         String unitString = priceLines.getFirst().getUnit();
 
-        for (InputPriceLine inputPriceLine : priceLines) {
-            if (Integer.toString(inputPriceLine.getPrice()).equals(minPriceString)) {
-                minHours.append(inputPriceLine.getHour()).append(", ");
+        return new Result(minPriceString, maxPriceString, avgPriceString, minHours, maxHours, avgHours, unitString);
+    }
+
+    private record Result(String minPriceString, String maxPriceString, String avgPriceString, StringBuilder minHours,
+                          StringBuilder maxHours, StringBuilder avgHours, String unitString) {
+    }
+
+    private static void getMinMaxHours(List<InputPriceLine> priceLines, Result minMaxAvgResult) {
+        priceLines.forEach(inputPriceLine -> {
+            if (Integer.toString(inputPriceLine.getPrice()).equals(minMaxAvgResult.minPriceString())) {
+                minMaxAvgResult.minHours().append(inputPriceLine.getHour()).append(", ");
             }
 
-            if (Integer.toString(inputPriceLine.getPrice()).equals(maxPriceString)) {
-                maxHours.append(inputPriceLine.getHour()).append(", ");
+            if (Integer.toString(inputPriceLine.getPrice()).equals(minMaxAvgResult.maxPriceString())) {
+                minMaxAvgResult.maxHours().append(inputPriceLine.getHour()).append(", ");
             }
-        }
+        });
+    }
 
-        minMaxAvgLines.add(new MinMaxAvgLine("Billigast", minPriceString, minHours, unitString));
-        minMaxAvgLines.add(new MinMaxAvgLine("Dyrast", maxPriceString, maxHours, unitString));
-        minMaxAvgLines.add(new MinMaxAvgLine("Dygnets medelpris", avgPriceString, avgHours, unitString));
+    private static List<MinMaxAvgLine> setMinMaxAvgLines(List<MinMaxAvgLine> minMaxAvgLines, Result minMaxAvgResult) {
+        minMaxAvgLines.add(new MinMaxAvgLine("Billigast", minMaxAvgResult.minPriceString(), minMaxAvgResult.minHours(), minMaxAvgResult.unitString()));
+        minMaxAvgLines.add(new MinMaxAvgLine("Dyrast", minMaxAvgResult.maxPriceString(), minMaxAvgResult.maxHours(), minMaxAvgResult.unitString()));
+        minMaxAvgLines.add(new MinMaxAvgLine("Dygnets medelpris", minMaxAvgResult.avgPriceString(), minMaxAvgResult.avgHours(), minMaxAvgResult.unitString()));
+        StringBuilder sb = new StringBuilder();
+
         return Collections.unmodifiableList(minMaxAvgLines);
     }
 

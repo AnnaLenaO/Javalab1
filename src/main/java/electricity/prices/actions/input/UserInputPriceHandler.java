@@ -6,6 +6,7 @@ import electricity.prices.menu.UserMenuOptionResult;
 import static electricity.prices.actions.input.InputPrice.getInputPriceLines;
 
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class UserInputPriceHandler implements ActionInterface {
 
@@ -13,11 +14,12 @@ public class UserInputPriceHandler implements ActionInterface {
         System.out.println("Du har valt " + "\"" + userOptionResult.title() + "\"");
         int inputPriceLength = getInputPriceLines().size();
 
-        for (int i = 0; i < inputPriceLength; i++) {
-            String hour = getInputPriceLines().get(i).getHour();
-            int price = new UserInputPriceReader().readUserInput(hour, sc);
-            getInputPriceLines().get(i).setPrice(price);
-        }
+        IntStream.range(0, inputPriceLength)
+                .forEach(i -> {
+                    String hour = getInputPriceLines().get(i).getHour();
+                    int price = new UserInputPriceReader().readUserInput(hour, sc);
+                    getInputPriceLines().get(i).setPrice(price);
+                });
 
         System.out.println("Du har angett följande priser: ");
         new InputPricePrinter();

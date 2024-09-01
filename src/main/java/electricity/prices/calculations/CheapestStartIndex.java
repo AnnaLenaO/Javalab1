@@ -5,18 +5,18 @@ import electricity.prices.actions.input.InputPriceLine;
 import java.util.List;
 
 public class CheapestStartIndex {
-    public static int getCheapestStartIndex(List<InputPriceLine> priceLines) {
+    public static int getCheapestStartIndex(List<InputPriceLine> priceLines, int numberOfHours) {
 
         int startIndex = 0;
         int minFourHourPrice = getFirstFourHourPrice(priceLines);
         int currentFourHourPrice = minFourHourPrice;
 
-        for (int i = 4; i < priceLines.size(); i++) {
-            currentFourHourPrice += priceLines.get(i).getPrice() - priceLines.get(i - 4).getPrice();
+        for (int i = numberOfHours; i < priceLines.size(); i++) {
+            currentFourHourPrice += priceLines.get(i).getPrice() - priceLines.get(i - numberOfHours).getPrice();
 
             if (currentFourHourPrice < minFourHourPrice) {
                 minFourHourPrice = currentFourHourPrice;
-                startIndex = i - 3;
+                startIndex = i - (numberOfHours - 1);
             }
         }
         return startIndex;

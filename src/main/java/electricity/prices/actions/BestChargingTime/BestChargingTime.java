@@ -8,16 +8,13 @@ import java.util.List;
 import java.util.OptionalDouble;
 import java.util.stream.IntStream;
 
-public class BestChargingTimeAndAvg {
+public class BestChargingTime {
     private static List<BestChargingTimeLine> bestChargingTimeLines;
     private static String avgPriceString = "";
 
-    public static void createBestChargingTimeAndAvg(List<InputPriceLine> priceLines, int startIndex) {
+    public static void createBestChargingTimeAndAvg(List<InputPriceLine> priceLines, int startIndex, int numberOfHours) {
         bestChargingTimeLines = new ArrayList<>();
-        int numberOfHours = 4;
-
         getBestChargingTimeLines(priceLines, startIndex, numberOfHours);
-
         setAvgPriceString();
     }
 

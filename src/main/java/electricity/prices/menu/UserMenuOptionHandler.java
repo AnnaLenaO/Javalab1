@@ -16,7 +16,10 @@ public class UserMenuOptionHandler {
 
     private void handleOption() throws Exception {
         try {
-            Class<? extends ActionInterface> actionClass = ActionClassRegistry.getActionClass(userOptionResult.menuOption().getClass());
+            Class<? extends ActionInterface> actionClass = ActionClassRegistry
+                    .getActionClass(userOptionResult
+                            .menuOption()
+                            .getClass());
 
             if (actionClass == null) {
                 throw new Exception("No class " + "\"" + userOptionResult.menuOption().getClass() + "\"" + "found");
